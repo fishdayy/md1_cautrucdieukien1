@@ -6,14 +6,15 @@
 </head>
 <body>
 <script>
-  let a = +prompt("a: ");
-  let b = +prompt("b: ");
-  if ((a + b) < 4) {
-      result = 'Below';
-      document.write(result);
-  } else {
-      document.write('Over');
-  }
+    let login = prompt("Enter:");
+    let message = (login == 'Employee') ?
+        'Hello' :
+        (login == 'Director') ?
+            'Greetings' :
+            (login == '') ?
+                'No login' :
+                '';
+    alert(message);
 </script>
 </body>
 </html>
